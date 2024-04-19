@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
-import './publicaciones.css';
+import './NewsFeed.css'
+
+import  { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate desde react-router-dom
 
-export function Publicaciones() {
+
+import { TemplateLayout } from '../../Components/TemplateLayout/TemplateLayout';
+
+
+export function NewsFeed (){
     const [selectedOption, setSelectedOption] = useState('');
     const navigate = useNavigate(); // Inicializa navigate
 
@@ -10,14 +16,18 @@ export function Publicaciones() {
         const selectedValue = event.target.value;
         setSelectedOption(selectedValue);
         
-        // Redirige según la opción seleccionada
+        // // Redirige según la opción seleccionada
         if (selectedValue === 'Practica1') {
-            navigate('./pages/stepper/stepper.jsx'); // Usa navigate
+            navigate('/practicas'); // Usa navigate
         }
     };
 
+    
     return (
-        <body className='body_publ'>
+        <TemplateLayout>
+
+        
+        <div className='body_publ'>
             <div className="contenedor_1">
                 <div className="seccion_1">
                     <div className="sidebar-box">
@@ -34,8 +44,12 @@ export function Publicaciones() {
                     <h1 className="mi-clase">PUBLICACIONES</h1>
                 </div>
             </div>
-        </body>
+        </div>
+        </TemplateLayout>
+
     );
+    
 }
 
-export default Publicaciones;
+
+

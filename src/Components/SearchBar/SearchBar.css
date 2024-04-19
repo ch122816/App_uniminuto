@@ -1,0 +1,38 @@
+.parent-search {
+    border-radius: 5px;
+    /* width: 20vw;  */
+    height: 4vh;
+    font-size: 2vw;
+    margin: 7px;
+    position: relative;
+    display: flex;
+    
+    overflow: hidden; /* Asegura que el border-radius afecte a los elementos hijos */
+}
+
+.parent-search input[type=text] {
+    flex: 1;
+    /* width: 100%; */
+    
+    border: none; /* Elimina el borde individual del input para que no interfiera con el border-radius */
+    outline: none;
+    padding: 5px; /* Ajusta el padding según tus necesidades */
+    box-sizing: border-box;
+}
+
+.parent-search button {
+    flex: 0;
+    background-color: #0074D9;
+    color: #f2f2f2;
+    border: none; /* Elimina el borde individual del botón para que no interfiera con el border-radius */
+    cursor: pointer;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.parent-search button:hover {
+    border: 1px solid #ffffff;
+    transition: .3s ease all;
+    opacity: 1;
+}

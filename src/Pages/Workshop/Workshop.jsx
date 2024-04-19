@@ -1,7 +1,8 @@
-import React, { useState, useRef } from 'react';
-import './taller.css';
+import { useState, useRef } from 'react';
+import './Workshop.css';
+import { TemplateLayout } from '../../Components/TemplateLayout/TemplateLayout';
 
-export function Taller() {
+export function Workshop() {
   const [archivoElegido, setArchivoElegido] = useState(null); // Estado para el archivo seleccionado
   const inputRef = useRef(null); // Referencia al input file
 
@@ -29,6 +30,7 @@ export function Taller() {
   };
 
   return (
+    <TemplateLayout>
     <div>
       <h1 className="h1_t">Etapa taller y evaluacion</h1>
 
@@ -59,7 +61,8 @@ export function Taller() {
       <div className="ul"></div>
       <div className="ul"></div>
     </div>
+    </TemplateLayout>
   );
 }
 
-export default Taller;
+

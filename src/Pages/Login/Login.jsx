@@ -1,30 +1,34 @@
-import './login.css'
+import './Login.css'
 
 <link rel="Background" href="../background/background.jsx" />
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 
-// const LoginForm = () => {
-export function LoginForm() {
+
+export function Login() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState(false)
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/publicaciones");
+        navigate("/inicio");
     }
     
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        console.log('Email:', email)
-        console.log('Password:', password)
+  
 
         const user = { email: 'jefferson.herrera@uniminuto.edu.co', password: 'cami1228' };
 
         if (email === user.email && password === user.password) {
+            // // Para guardar el JWT en sessionStorage
+            // sessionStorage.setItem('jwt', 'tu_jwt_aqui');
+
+            // // Para recuperar el JWT de sessionStorage
+            // const jwt = sessionStorage.getItem('jwt');
 
             // <NavLink to={}></NavLink> 
             <link rel="Inscription" href="../Inscription/iscription.jsx" />
@@ -84,4 +88,4 @@ export function LoginForm() {
     )
 }
 
-export default LoginForm;
+export default Login;
