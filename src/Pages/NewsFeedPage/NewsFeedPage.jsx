@@ -1,4 +1,4 @@
-import './NewsFeed.css'
+import './NewsFeedPage.css'
 
 import  { useState } from 'react';
 
