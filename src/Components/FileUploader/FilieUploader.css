@@ -1,0 +1,12 @@
+.h2_FU{
+    font-family: Arial, sans-serif;
+    font-size: 15px; 
+    color: #0a293d; 
+    display:flex;
+  }
+  .p_FU {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 12px; /* Tamaño de fuente reducido */
+    text-align: left;
+}

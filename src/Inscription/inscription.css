@@ -129,8 +129,9 @@
   }
   
   .identificacion label {
-    width: 150px; /* Ajusta el ancho según sea necesario */
+    width: 150px; 
   }
   
-  /* Ajustes de estilo adicionales según tu preferencia */
-  
+  .Ti{
+    width: 500%; 
+  }

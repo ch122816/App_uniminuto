@@ -2,8 +2,15 @@ import React from 'react';
 import './inscription.css';
 
 export function Inscription() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Aquí puedes agregar la lógica para manejar el envío del formulario
+    // Por ejemplo, puedes obtener los valores de los campos del formulario usando event.target
+    // y luego enviar esos valores a tu servidor o realizar alguna acción basada en ellos
+  };
+
   return (
-    <form className="ul">
+    <form className="ul" onSubmit={handleSubmit}>
       <h1 className="h1">Formulario de pre-inscripción a práctica 1</h1>
 
       <section className="formulario informacion-usuario">
@@ -19,7 +26,7 @@ export function Inscription() {
             <strong><abbr title="Tipo de identificación"></abbr></strong>
           </label>
           <div className="identificacion">
-            <select name="Tipo_edentificacion" id="Tipo_edentificacion" required>
+            <select className='Ti' name="Tipo_edentificacion" id="Tipo_edentificacion" required>
               <option value="0">CC</option>
               <option value="1">CE</option>
               <option value="2">TI</option>
@@ -99,4 +106,5 @@ export function Inscription() {
     </form>
   );
 }
+
 export default Inscription;
