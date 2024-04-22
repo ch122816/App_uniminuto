@@ -17,7 +17,7 @@ export function Classification() {
 
 
   const handleEnviarClasificacion = () => {
-    sessionStorage.setItem('Clasificación', selectedOption);
+    sessionStorage.setItem('clasificacion', selectedOption);
     console.log('Clasificación:', selectedOption);
   };
 

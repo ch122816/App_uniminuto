@@ -1,10 +1,12 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
+import { useEffect } from 'react';
 import './Legalization';
 import jsonData from '../../Logic/example.json'; // Importar el JSON con la información
 import FileUploader from '../../Components/FileUploader/FileUploader';
 import DocumentLink from '../../Components/DocumentLink/DocumentLink';
 import VideoPlayer from '../../Components/VideoPlayer/VideoPlayer';
 import ApprovalStatus from '../../Components/ApprovalStatus/ApprovalStatus';
+
 
 export function Legalization() {
   const [selectedOption, setSelectedOption] = useState('');
@@ -17,11 +19,6 @@ export function Legalization() {
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
     setSelectedOption(event.target.value);
-  };
-
-  const handleEnviarClasificacion = () => {
-    console.log('Clasificación:', selectedOption);
-    setEnviado(true); // Marca el formulario como enviado
   };
 
   const handleVolverACargar = () => {
@@ -37,6 +34,18 @@ export function Legalization() {
       fileInputRef3.current.value = '';
     }
   };
+
+  useEffect(() => {
+    const legalizacion = JSON.parse(JSON.stringify(jsonData));
+    const seleccion = sessionStorage.getItem('clasificacion');
+    for (let clave in legalizacion) {
+        if (seleccion === clave) {
+            setData(legalizacion[clave]);
+            break;
+        }
+    }
+  }, []);
+
 
   // Obtener los datos correspondientes a la opción seleccionada del JSON
   const selectedData = selectedOption ? jsonData[selectedOption] : null;
