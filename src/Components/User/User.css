@@ -1,0 +1,74 @@
+.md-followCard {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+  }
+  
+  .md-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 4px
+  }
+  
+  .md-followCard-containerText {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .md-followCard-userName{
+    opacity: .6;
+  }
+  
+  .md-followCard-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+  }
+  
+  .md-followCard-button {
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+  }
+  
+  .md-followCard-button:hover {
+    opacity: .8;
+  }
+  
+  .md-followCard-text {
+    display: block;
+  }
+  
+  .md-followCard-button.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+    width: 140px;
+  }
+  
+  .md-followCard-button.is-following:hover {
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+    opacity: 1;
+  }
+  
+  .md-followCard-button.is-following:hover .md-followCard-text {
+    display: none;
+  }
+  
+  .md-followCard-button.is-following:hover .md-followCard-stopFollow {
+    display: block;
+  }
+  
+  .md-followCard-stopFollow {
+    display: none;
+  }
