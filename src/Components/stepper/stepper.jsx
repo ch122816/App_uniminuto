@@ -8,7 +8,6 @@ import './Stepper.css';
 
 
 
-
 export function Stepper({componentes}) {
 
 
@@ -18,6 +17,8 @@ export function Stepper({componentes}) {
   const handleBack = () => setActiveStep(prev => prev - 1);
 
   const isLastStep = activeStep === Object.keys(componentes).length - 1;
+
+
 
   return (
     
@@ -52,6 +53,10 @@ export function Stepper({componentes}) {
       
       <section className="practice-content" >{Object.values(componentes)[activeStep]}</section>  
      
+
+     <div>
+       
+     </div>
     </  >
   );
 }

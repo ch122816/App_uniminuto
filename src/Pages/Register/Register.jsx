@@ -99,6 +99,6 @@ export function Register() {
         </fieldset>
       </section>
     </form>
-    
+      
   );
 }
