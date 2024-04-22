@@ -7,24 +7,28 @@ import ApprovalStatus from '../../Components/ApprovalStatus/ApprovalStatus'; // 
 
 function Workshop() {
   const [archivoElegido, setArchivoElegido] = useState(null); // Estado para el archivo seleccionado
+  const [enviado, setEnviado] = useState(false); // Estado para controlar si se ha enviado el archivo
   const inputRef = useRef(null); // Referencia al input file
 
   // Maneja el cambio de archivo seleccionado
   const handleArchivoSeleccionado = (event) => {
     const archivo = event.target.files[0];
     setArchivoElegido(archivo);
+    setEnviado(false); // Cuando se selecciona un nuevo archivo, se reinicia el estado de enviado
   };
 
   // Maneja el envío del archivo seleccionado
   const handleEnviarArchivo = () => {
     // Aquí puedes escribir la lógica para enviar el archivo
     console.log('Archivo seleccionado:', archivoElegido);
+    setEnviado(true); // Marca el archivo como enviado
   };
 
   // Maneja el clic en el botón para volver a cargar
   const handleVolverACargar = () => {
-    // Resetea el estado del archivo elegido
+    // Resetea el estado del archivo elegido y el estado de envío
     setArchivoElegido(null);
+    setEnviado(false); // Se asegura de que el botón de "Enviar" vuelva a aparecer
   };
 
   return (
@@ -43,14 +47,19 @@ function Workshop() {
             <>
               <p>Archivo seleccionado: {archivoElegido.name}</p>
               <button type="button" onClick={handleVolverACargar}>Volver a cargar</button>
+              <p></p>
             </>
           ) : (
             <p>Ningún archivo seleccionado</p>
           )}
 
-          {archivoElegido && <button type="button" onClick={handleEnviarArchivo}>Enviar</button>}
-          <p></p>
-          <ApprovalStatus />
+          {archivoElegido && !enviado && (
+            <button type="button" onClick={handleEnviarArchivo}>Enviar</button>
+          )}
+
+          {enviado && (
+            <ApprovalStatus />
+          )}
         </div>
 
         <div className="columna columna2">

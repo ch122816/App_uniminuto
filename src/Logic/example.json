@@ -1,0 +1,37 @@
+{
+    "Contrato Aprendizaje": {
+        "video": "directorio/video_contrato_aprendizaje.mp4",
+        "manual": "Instructivo_contrato_aprendizaje.pdf",
+        "req_documents": ["Certificado de vinculacion", "Certificado de ARL", "Certificado de EPS"]
+    },
+    "Emprendimiento": {
+        "video": "directorio/video_emprendimiento.mp4",
+        "manual": "Instructivo_emprendimiento.pdf",
+        "req_documents": ["Subir Memorando"]
+    },
+    "Proyecto Especial": {
+        "video": "directorio/video_proyecto_especial.mp4",
+        "manual": "Instructivo_proyecto_especial.pdf",
+        "req_documents": ["Certificado de vinculacion", "Certificado de EPS", "Certificado de ARL"]
+    },
+    "Investigación": {
+        "video": "directorio/video_investigacion.mp4",
+        "manual": "Instructivo_investigacion.pdf",
+        "req_documents": ["Subir Memorando"]
+    },
+    "Mentoría Docente": {
+        "video": "directorio/video_mentoria_docente.mp4",
+        "manual": "Instructivo_mentoria_docente.pdf",
+        "req_documents": ["Subir Memorando", "Certificado de EPS", "Copia documento de identidad"]
+    },
+    "Vinculación Laboral": {
+        "video": "directorio/video_vinculacion_laboral.mp4",
+        "manual": "Instructivo_vinculacion_laboral.pdf",
+        "req_documents": ["Certificado de vinculacion", "Certificado de ARL", "Certificado de EPS"]
+    },
+    "Vínculo Laboral Intermediación": {
+        "video": "directorio/video_vinculo_laboral_intermediacion.mp4",
+        "manual": "Instructivo_vinculo_laboral_intermediacion.pdf",
+        "req_documents": ["Certificado de vinculacion", "Carta de autorizacion para la elaboracion de proyectos o propuestas de mejora", "Certificado de ARL", "Certificado de EPS"]
+    }
+}

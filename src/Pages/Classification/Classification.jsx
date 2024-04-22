@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import './Classification.css';
-import FileUploader from '../../Components/FileUploader/FileUploader';
+
 import DocumentLink from '../../Components/DocumentLink/DocumentLink';
 import VideoPlayer from '../../Components/VideoPlayer/VideoPlayer';
-import ApprovalStatus from '../../Components/ApprovalStatus/ApprovalStatus';
+
 
 export function Classification() {
   const [selectedOption, setSelectedOption] = useState('');
   const [inputValue, setInputValue] = useState('');
 
-  // Maneja el cambio de valor en el campo de texto
+
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
-    setSelectedOption(event.target.value); // Actualiza la opción seleccionada al valor del campo de texto
+    setSelectedOption(event.target.value); 
   };
 
-  // Maneja el envío de la clasificación
+
   const handleEnviarClasificacion = () => {
-    // Aquí puedes escribir la lógica para enviar la clasificación
+    sessionStorage.setItem('Clasificación', selectedOption);
     console.log('Clasificación:', selectedOption);
   };
 
