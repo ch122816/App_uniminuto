@@ -30,7 +30,7 @@ export function Workshop() {
   };
 
   return (
-    <TemplateLayout>
+    
     <div>
       <h1 className="h1_t">Etapa taller y evaluacion</h1>
 
@@ -61,7 +61,7 @@ export function Workshop() {
       <div className="ul"></div>
       <div className="ul"></div>
     </div>
-    </TemplateLayout>
+    
   );
 }
 

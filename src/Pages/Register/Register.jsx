@@ -4,7 +4,7 @@ import './Register.css';
 
 export function Register() {
   return (
-    <TemplateLayout>
+    
     <form className="ul">
       <h1 className="h1">Formulario de pre-inscripción a práctica 1</h1>
 
@@ -99,6 +99,6 @@ export function Register() {
         </fieldset>
       </section>
     </form>
-    </TemplateLayout>
+    
   );
 }

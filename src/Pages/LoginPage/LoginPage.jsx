@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 
 
-export function Login() {
+export function LoginPage() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState(false)
@@ -88,4 +88,3 @@ export function Login() {
     )
 }
 
-export default Login;

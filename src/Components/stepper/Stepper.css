@@ -1,0 +1,28 @@
+.box-stepper{
+     width: 85% 
+}
+
+
+/* Estilos base para el botón */
+.stepper-button {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  /* Estilo al pasar el cursor por encima */
+  .stepper-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+  }
+  
+  /* Estilo cuando el botón está desactivado */
+  .stepper-button:disabled {
+    background-color: #ccc; /* Color de fondo gris */
+    color: #666; /* Color de texto gris */
+    cursor: not-allowed; /* Cursor de no permitido */
+  }

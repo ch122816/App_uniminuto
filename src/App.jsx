@@ -2,9 +2,9 @@
 
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import  LoginPage  from './Pages/LoginPage/LoginPage';
-import { NewsFeedPage } from './Pages/NewsFeedPage/NewsFeedPage';
-import { PracticePage } from './Pages/PracticePage/PracticePage';
+import  {LoginPage}  from './Pages/LoginPage/LoginPage';
+import {NewsFeedPage} from './Pages/NewsFeedPage/NewsFeedPage';
+import {PracticePage} from './Pages/PracticePage/PracticePage';
 import {ProtectedRoute} from './Logic/ProtectedRoute';
 
 

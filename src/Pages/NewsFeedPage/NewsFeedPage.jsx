@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'; // Importa useNavigate desde rea
 import { TemplateLayout } from '../../Components/TemplateLayout/TemplateLayout';
 
 
-export function NewsFeed (){
+export function NewsFeedPage (){
     const [selectedOption, setSelectedOption] = useState('');
     const navigate = useNavigate(); // Inicializa navigate
 
