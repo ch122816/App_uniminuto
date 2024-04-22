@@ -1,7 +1,6 @@
-.box-stepper{
-     width: 85% 
-}
-
+.stepper-buttons {
+  display: flex;
+  justify-content: space-between;}
 
 /* Estilos base para el botón */
 .stepper-button {
@@ -13,6 +12,7 @@
     cursor: pointer; /* Cursor al pasar por encima */
     font-size: 16px; /* Tamaño de fuente */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    
   }
   
   /* Estilo al pasar el cursor por encima */
@@ -26,3 +26,5 @@
     color: #666; /* Color de texto gris */
     cursor: not-allowed; /* Cursor de no permitido */
   }
+
+

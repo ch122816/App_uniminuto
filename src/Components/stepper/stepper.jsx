@@ -21,17 +21,17 @@ export function Stepper({componentes}) {
 
   return (
     
-    <div className='box-stepper'>
-      <MUIStepper activeStep={activeStep}>
-        {Object.keys(componentes).map((label, index) => (
-          <Step key={index}>
-            <StepLabel>{label}</StepLabel>
-          </Step>
-        ))}
-      </MUIStepper>
+    <>
+      <span className='box-stepper'>
+        <MUIStepper activeStep={activeStep}>
+          {Object.keys(componentes).map((label, index) => (
+            <Step key={index}>
+              <StepLabel>{label}</StepLabel>
+            </Step>
+          ))}
+        </MUIStepper> 
+      </span>
       
-      <div>{Object.values(componentes)[activeStep]}</div>
-
       <div className='stepper-buttons'>
         <button 
           color="inherit" 
@@ -48,7 +48,10 @@ export function Stepper({componentes}) {
         >
           {isLastStep ? 'Finish' : 'Next'}
         </button>
-      </div>
-    </div>
+      </div>  
+      
+      <section className="practice-content" >{Object.values(componentes)[activeStep]}</section>  
+     
+    </  >
   );
 }

@@ -1,0 +1,42 @@
+
+{
+    "contrato_aprendizaje":{
+    "src_video":"directorio/video.mp4",
+    "path_manual":"",
+    "req_documents":["","",""]
+    },
+    "emprendimiento":{
+        "src_video":"",
+        "path_manual":"",
+        "req_documents":["","",""]
+        },
+    "proyecto_especial":{
+        "src_video":"",
+        "path_manual":"",
+        "req_documents":["","",""]
+        },
+    "investigacion":{
+        "src_video":"",
+        "path_manual":"",
+        "req_documents":["","",""]
+        },
+    "mentoria_docente":{
+        "src_video":"",
+        "path_manual":"",
+        "req_documents":["","",""]
+        },
+    "vinculacion_laboral":{
+        "src_video":"",
+        "path_manual":"",
+        "req_documents":["","",""]
+        },
+    "intermediacion":{
+        "src_video":"",
+        "path_manual":"",
+        "req_documents":["","",""]
+        }
+    
+}
+
+
+

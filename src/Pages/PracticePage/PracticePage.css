@@ -1,0 +1,44 @@
+.practice-layout {
+    border: 1px solid black;
+    padding: 1vh 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .practice-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .practice-stepper {
+    /* background-color: #0a293d; */
+    width: 100%;
+    margin: 4rem;
+  }
+  
+  .practice-content {
+    margin: 1vh;
+    border: 1px solid #141414;
+    margin-bottom: 1rem;
+  }
+  
+  .practice-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .practice-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .practice-button:hover {
+    background-color: #0056b3;
+  }
+  
